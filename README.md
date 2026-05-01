@@ -12,15 +12,15 @@ React + Vite + Hono + Tailwind + Cloudflare Workers
 
 ```bash
 # Install dependencies
-bun install
+npm install --legacy-peer-deps
 
 # Generate types and run migrations
-bun cf-typegen
-bun db:generate
-bun db:migrate
+npm run cf-typegen
+npm run db:generate
+npm run db:migrate
 
 # Start dev server
-bun dev
+npm run dev
 ```
 
 ## shadcn/ui
@@ -28,7 +28,7 @@ bun dev
 Add components you need, customize them however you want.
 
 ```bash
-bun x shadcn@latest add button card dialog
+npm exec shadcn@latest add button card dialog
 ```
 
 Components land in `src/web/components/ui/`, import with `@/components/ui/button`.
@@ -57,8 +57,8 @@ import { Route, Switch } from "wouter";
 Uses [Drizzle ORM](https://orm.drizzle.team/) with Cloudflare D1.
 
 ```bash
-bun db:generate       # Generate migrations from schema
-bun db:migrate        # Apply migrations locally
+npm run db:generate       # Generate migrations from schema
+npm run db:migrate        # Apply migrations locally
 ```
 
 Schema is in `src/api/database/schema.ts`, migrations in `src/api/migrations/`.
@@ -81,5 +81,5 @@ app.get('/api/hello', (c) => c.json({ message: 'Hello' }));
 
 **IMPORTANT: Font imports are loaded in `index.html`.** Do not add external `@import` font statements inside `src/web/styles.css`; they must be included in the document head to avoid PostCSS order errors.
 
-**IMPORTANT: Don't assume how a package works from memory.** Run `bun build` to catch type errors. If anything fails, check the package docs.
+**IMPORTANT: Don't assume how a package works from memory.** Run `npm run build` to catch type errors. If anything fails, check the package docs.
 # credit_default_modelling
