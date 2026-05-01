@@ -1,0 +1,4 @@
+Scenario,AUC,Gini,KS,Mean PD,Mean EL
+Baseline,0.742,0.483,0.366,0.2012,0.0905
+Mild Stress,0.738,0.475,0.376,0.2717,0.1223
+Severe Stress,0.705,0.409,0.322,0.3387,0.1524

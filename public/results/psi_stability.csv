@@ -1,0 +1,6 @@
+Model,PSI,Status
+LR (WoE+Scorecard),0.0005,Stable
+Random Forest,0.0033,Stable
+XGBoost,0.0074,Stable
+LightGBM,0.0003,Stable
+MLP,0.0021,Stable

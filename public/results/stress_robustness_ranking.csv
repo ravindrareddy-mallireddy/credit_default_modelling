@@ -1,0 +1,6 @@
+Model,Baseline AUC,Severe AUC,AUC Drop,Drop %,Robustness Rank
+LR (WoE+Scorecard),0.7177,0.7003,0.0174,2.42,1
+MLP,0.7288,0.7055,0.0233,3.2,2
+XGBoost,0.7415,0.7046,0.0369,4.98,3
+LightGBM,0.7305,0.6774,0.0531,7.27,4
+Random Forest,0.7513,0.6846,0.0667,8.88,5

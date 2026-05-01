@@ -1,0 +1,6 @@
+score_band,count,default_rate,monotonic
+Very High Risk,900,0.49,True
+High Risk,1172,0.24658703071672355,True
+Medium Risk,629,0.1383147853736089,True
+Low Risk,899,0.11457174638487208,True
+Very Low Risk,900,0.08444444444444445,True
